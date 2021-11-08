@@ -5,5 +5,10 @@ This project was created in an attempt to make a model that can detect if a face
 
 To test this, I made two neural networks: one Unsupervised using Dense layers and another that's a CNN and is Unsupervised. After these models were trained (fitting information in their respective Colab files) I put them to the test by giving them real and fake faces as well as their labels. The traditional neural network (with dense layers) seemed to perform better than the CNN.
 
-UPDATE: 10/12/2021 - 
+
+- UPDATE: 10/12/2021 - 
 Both models overfitted regardless of loss function, epochs, and layer depth in the model added on top of the retrained ones. Gave it 4 faces to examine for autheticity: 2 were real faces the other 2 were fake faces. Will be overhauling layers in pretrained models to see if that can work.
+
+
+- UPDATE 11/8/2021 - 
+The pretrained unsupervised NNs continued to overfit the data. Xreated two NNs trained off of the fake and real faces. Ultiamtely, they faired far better than the pretrained ones. Next time, I will experiment with BinaryCrossEntropy() as the loss function to see if performance will improve on the pretrained NNs.
